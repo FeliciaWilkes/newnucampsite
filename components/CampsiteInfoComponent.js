@@ -85,15 +85,14 @@ function RenderComments({comments}) {
 }
 class CampsiteInfo extends Component {
 
-    constructor(props) {
-        super(props);
+    
         state = {
             showModal: false,
             rating: 5,
             author: "",
             text: ""
         };
-    }
+    
     markFavorite(campsiteId) {
         this.props.postFavorite(campsiteId);
     }
