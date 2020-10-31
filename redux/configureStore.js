@@ -30,5 +30,5 @@ export const ConfigureStore = () => {
     const persistor = persistStore(store);
 
 
-    return store;
+    return {persistor, store};
 }
